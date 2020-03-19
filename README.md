@@ -26,6 +26,7 @@ tag[32]: valid
 tag[31:0]: paddr[43:12]
 
 
+
 Input
 -----
 A Python data structure: list of tuples of (address, data_string). For example:                                                                               
@@ -46,3 +47,10 @@ dcacheA.hex
 dcacheB.hex
 dcacheC.hex
 dcacheD.hex
+
+
+### Script
+The script has following features :-     
+-- It will fill up the Cache according to the User Input for the Given Index and Way in that Index  
+-- If the same address is given again, the script will use LRU scheme to replace the Tag and Data     
+-- If the User Doesn't give addresses to cover all 64 Sets of the Cache, then the Script will automatically initialize them to be zero
